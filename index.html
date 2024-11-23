@@ -1,174 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SANJAY BALAGAN.V </title>
+    <title>SANJAY BALAGAN.V</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{
-        font-family: 'Poppins', sans-serif;
-        line-height: 1.6;
-        background: linear-gradient(to right, blue, brown);
-        overflow-x: hidden;
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, blue, brown);
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
         }
 
-        .img{
+        .img {
             display: flex;
             justify-content: center;
         }
 
-        img{
+        img {
             border-radius: 20px;
+            max-width: 90%;
+            height: auto;
         }
 
-        .aboutme{
-            padding: 20px 20px;
+        .aboutme, .studies, .address, .contactme, .skills-section {
+            padding: 20px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin: 40px auto;
-            width: fit-content;
-            max-width: 90%;
+            margin: 20px auto;
+            width: 90%;
             background: linear-gradient(to right, orange, blueviolet);
         }
 
-        .studies{
+        h1 {
             text-align: center;
-            padding: 20px 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin: 40px auto;
-            width: fit-content;
-            max-width: 90%;
-            background: linear-gradient(to right, orange, blueviolet);
+            font-size: 2.5rem;
+            margin: 20px 0;
         }
 
-        .address{
-            text-align: center;
-            padding: 20px 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin: 40px auto;
-            width: fit-content;
-            max-width: 90%;
-            background: linear-gradient(to right, orange, blueviolet);
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
 
-        .contactme{
-            text-align: center;
-            padding: 20px 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin: 40px auto;
-            width: fit-content;
-            max-width: 90%;
-            background: linear-gradient(to right, orange, blueviolet);
+        p {
+            font-size: 1rem;
+            margin-bottom: 10px;
         }
 
-            h1{
-            text-align: center;
-        }
-
-        button{
+        button {
             background-color: greenyellow;
+            border: none;
             border-radius: 5px;
             padding: 12px 20px;
-            gap: 20px;
+            margin: 5px;
         }
 
-        .pl{
+        button a {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+        }
+
+        .pl {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
-        .skill{
+        .skill {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
         }
 
-        .skills-section{
-            text-align: center;
-            padding: 20px 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin: 40px auto;
-            width: fit-content;
-            max-width: 90%;
-            background: linear-gradient(to right,orange, blueviolet);
+        .skill img {
+            width: 50px;
+            height: 50px;
         }
 
-        .sbname{
+        .skills-section {
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .sbname {
             font-family: "PT Serif", serif;
             font-weight: 700;
-            font-style: normal;
         }
 
-        .kissme{
-            font-family: "PT_Serif variant1", Tofu;
+        .kissme {
+            font-family: "PT Serif", serif;
             font-weight: 400;
             font-style: italic;
         }
-        
 
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
 
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            button {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+
+            .skills-section, .aboutme, .studies, .address, .contactme {
+                width: 100%;
+                box-shadow: none;
+            }
+
+            .img img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            button {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+
+            .skills-section .skill img {
+                width: 40px;
+                height: 40px;
+            }
+        }
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    </head>
+</head>
 <body>
 
     <div class="firstbox">
-    <h1 class="sbname">SANJAY BALAGAN V</h1>
+        <h1 class="sbname">SANJAY BALAGAN V</h1>
 
-    <div class="img">
-    <img src="IMG-20241104-WA0333.jpg" alt="SANJAY BALAGAN" style="height: 250PX;"/>
-    </div>
+        <div class="img">
+            <img src="IMG-20241104-WA0333.jpg" alt="SANJAY BALAGAN">
+        </div>
 
-    <div class="aboutme">
-    <h2>About me</h2>
-    <p class="kissme">
-        Hi, I'm Sanjay Balagan.V, a passionate web developer with a creative mind and a strong interest in building user-friendly websites.<br>
-         I love turning ideas into functional, visually appealing designs and continuously strive to enhance my skills in the ever-evolving world of web development.</p>
-    </div>
+        <div class="aboutme">
+            <h2>About me</h2>
+            <p class="kissme">
+                Hi, I'm Sanjay Balagan.V, a passionate web developer with a creative mind and a strong interest in building user-friendly websites.<br>
+                I love turning ideas into functional, visually appealing designs and continuously strive to enhance my skills in the ever-evolving world of web development.
+            </p>
+        </div>
 
-    <div class="address">
-        <h2 class="hugme">Address</h2>
-        <p class="kissme">4-2532,,Thazveedhi,karumandurai,chinnakalrayanhills,karumandurai,salem-636138</p>
-        </div>  
-    
+        <div class="address">
+            <h2 class="hugme">Address</h2>
+            <p class="kissme">4-2532, Thazveedhi, Karumandurai, Chinnakalrayanhills, Karumandurai, Salem-636138</p>
+        </div>
 
-    <div class="studies">
-    <h2>Studies</h2>
-    <p class="kissme"><strong>Schooling done at</strong> PRAPAVATHY MATRICULATION HIGHER SECONDARY SCHOOL,KARUMANDURAI</p>
-    <p class="kissme"><strong>College at</strong> SRMIST,KTR campus</p>
-    <p class="kissme"><strong>Program</strong> B.TECH-Electronic and Communication Engineering</p>
-    </div>
+        <div class="studies">
+            <h2>Studies</h2>
+            <p class="kissme"><strong>Schooling done at</strong> PRAPAVATHY MATRICULATION HIGHER SECONDARY SCHOOL, KARUMANDURAI</p>
+            <p class="kissme"><strong>College at</strong> SRMIST, KTR campus</p>
+            <p class="kissme"><strong>Program</strong> B.TECH - Electronic and Communication Engineering</p>
+        </div>
 
-    <section id="skills">
-        <div class="skills-section">
-            <div class="pl">
-            <h2>Programming Languages I Know</h2></div>
-            <div class="skills-icons">
-                <div class="skill">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" style="width: 50px;">
-                    <p>HTML</p>
+        <section id="skills">
+            <div class="skills-section">
+                <h2>Programming Languages I Know</h2>
+                <div class="pl">
+                    <div class="skill">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                        <p>HTML</p>
+                    </div>
                 </div>
-                
-    </section>
+            </div>
+        </section>
 
-    
-    <div class="contactme">
-    <h2>Contact me</h2>
-    <button><a href="9940899253">Mobile</a></button> 
-    <button><a href="https://linktr.ee/sb6927">linktree</a></button>
+        <div class="contactme">
+            <h2>Contact me</h2>
+            <button><a href="tel:9940899253">Mobile</a></button>
+            <button><a href="https://linktr.ee/sb6927" target="_blank">Linktree</a></button>
+        </div>
     </div>
 
-    </div>
-    
 </body>
 </html>
